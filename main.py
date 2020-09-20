@@ -67,15 +67,7 @@ if algorithm == 'dijkstra':
         for i in closed:
             let_closed.append(num_to_let[i])
         print('open:', open, ', closed:', let_closed)
-        grid_path = []
-        for i in range(len(pathes[matrix_numbers[finish_i][finish_j]])):
-            for j in range(len(matrix_numbers[finish_i])):
-                if i in matrix_numbers[j]:
-                    grid_path.append((j, matrix_numbers[j].index(i)))
-        #print('path:', pathes[matrix_numbers[finish_i][finish_j]])
-        print(grid_path)
-
-
+        print('path:', pathes[matrix_numbers[finish_i][finish_j]])
 
 if algorithm == 'astar':
     if type == 'grid':
